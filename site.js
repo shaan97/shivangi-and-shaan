@@ -24,7 +24,7 @@
   const guide = document.getElementById('pink-city-guide');
   const places = JSON.parse(document.getElementById('jp-places').textContent);
   const keys = Array.from(guide.querySelectorAll('.jp-key'));
-  const marks = Array.from(guide.querySelectorAll('.jp-mark'));
+  const marks = Array.from(guide.querySelectorAll('.jp-mark, .jp-anchor'));
   const detail = guide.querySelector('.jp-detail-line');
   const description = detail.querySelector('span');
   const website = detail.querySelector('a');

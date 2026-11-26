@@ -78,7 +78,8 @@
       if (url.protocol !== 'https:' || url.username || url.password || url.port) return null;
       const shortLink = url.hostname === 'forms.gle' && /^\/[\w-]+\/?$/.test(url.pathname);
       const fullLink = url.hostname === 'docs.google.com' && /^\/forms\/d\/(?:e\/)?[\w-]+\/viewform\/?$/.test(url.pathname);
-      return shortLink || fullLink ? url.href : null;
+      const tallyLink = url.hostname === 'tally.so' && /^\/r\/[\w-]+\/?$/.test(url.pathname);
+      return shortLink || fullLink || tallyLink ? url.href : null;
     } catch {
       return null;
     }

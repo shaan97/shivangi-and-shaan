@@ -13,7 +13,11 @@ Use a pull request to review changes before merging to `main`.
 
 ## Guest forms
 
-The website opens Google Forms for hair and makeup requests and song suggestions. Each form writes to its own Google Sheet.
+The website can open Tally or Google Forms for hair and makeup requests and song suggestions. In the `cc-guest-form-links` JSON block in `index.html`, add the two published responder links. An empty entry leaves that form marked “Requests open soon.”
+
+For Tally, publish each form and use its `https://tally.so/r/…` responder link. Responses stay in the Tally dashboard. A private spreadsheet connection is optional. Keep response dashboard links, credentials, and exports out of this repository.
+
+For Google Forms, the setup script creates a separate response sheet for each form:
 
 1. In [a new standalone Apps Script project](https://script.google.com/home/projects/create), paste [the setup script](tools/create-guest-forms.gs). Run `createWeddingGuestForms` and authorize access to Forms and Sheets. The execution log contains the two form edit links and their separate response sheets. Running the script again in the same project reuses the existing forms.
 2. Open both forms in Google Forms. Publish each and set responder access to **Anyone with the link** if guests should be able to respond without invitations. Test each using a signed-out browser window and confirm a test response appears in the right sheet. Keep the response sheets private.

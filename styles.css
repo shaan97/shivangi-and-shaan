@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@400;500&family=Pinyon+Script&display=swap');
+
+body{margin:0;background:#f6f2e8}
+
+#chomu-palace-compact{container-type:inline-size;width:100%}
+#chomu-palace-compact .cc-site{--cc-ivory:#fffdf0;--cc-paper:#f6f2e8;--cc-ink:#2c493c;--cc-muted:#586453;--cc-line:#cec9b9;--cc-gold:#7b602e;--cc-soft:#e8ebdf;--cc-darkness:.46;--cc-names-scale:1;background:var(--cc-paper);color:var(--cc-ink);font:13px/1.8 'DM Sans',Arial,sans-serif;box-sizing:border-box}
+#chomu-palace-compact .cc-site *{box-sizing:border-box}
+#chomu-palace-compact .cc-site h1,#chomu-palace-compact .cc-site h2,#chomu-palace-compact .cc-site h3,#chomu-palace-compact .cc-site p{margin:0}
+#chomu-palace-compact .cc-site a,#chomu-palace-compact .cc-site summary{touch-action:manipulation}
+#chomu-palace-compact .cc-hero{position:relative;min-height:615px;isolation:isolate;display:flex;flex-direction:column;color:var(--cc-ivory);background:#344d36;overflow:hidden}
+#chomu-palace-compact .cc-photo{position:absolute;inset:0;z-index:-3;display:block;width:100%;height:100%;object-fit:cover;object-position:var(--cc-photo-position,40%) center}
+#chomu-palace-compact .cc-wash{position:absolute;inset:0;z-index:-2;background:#173d29;opacity:var(--cc-darkness);pointer-events:none}
+#chomu-palace-compact .cc-hero:after{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(8,28,19,.25),rgba(19,35,22,.04) 40%,rgba(12,31,18,.28));pointer-events:none}
+#chomu-palace-compact .cc-monogram{position:absolute;top:28px;left:0;right:0;text-align:center;color:var(--cc-ivory);font:29px/1 'Cormorant Garamond',Georgia,serif;letter-spacing:-1px}
+#chomu-palace-compact .cc-monogram em{font-size:24px;margin:0 4px}
+#chomu-palace-compact .cc-cover{position:relative;flex:1;text-align:center;padding:164px 28px 50px;display:flex;flex-direction:column;align-items:center}
+#chomu-palace-compact .cc-names{display:flex;justify-content:center;align-items:baseline;gap:25px;width:100%;font:400 calc(clamp(48px,9cqw,94px) * var(--cc-names-scale))/1.04 'Cormorant Garamond',Georgia,serif;letter-spacing:-1.7px;white-space:nowrap;text-shadow:0 1px 18px #0f281a22}
+#chomu-palace-compact .cc-names .cc-and{font:400 .78em/1 'Pinyon Script','Cormorant Garamond',Georgia,serif;letter-spacing:-.7px;margin:0 1px}
+#chomu-palace-compact .cc-announcement{font:400 17px/1.8 'Cormorant Garamond',Georgia,serif;letter-spacing:4px;text-transform:uppercase;margin-top:74px!important}
+#chomu-palace-compact .cc-location{font:400 44px/1.25 'Pinyon Script','Cormorant Garamond',Georgia,serif;margin-top:28px!important}
+#chomu-palace-compact .cc-date{font:400 17px/1.8 'Cormorant Garamond',Georgia,serif;letter-spacing:5.4px;text-transform:uppercase;margin-top:19px!important}
+#chomu-palace-compact .cc-place{font:11px/1.7 'DM Sans',Arial,sans-serif;letter-spacing:2.5px;text-transform:uppercase;margin-top:11px!important;color:#f7f4e2}
+#chomu-palace-compact .cc-scroll{display:inline-flex;align-items:center;justify-content:center;gap:13px;min-height:44px;color:var(--cc-ivory);font:11px/1.7 'DM Sans',Arial,sans-serif;letter-spacing:1.4px;text-transform:uppercase;margin-top:36px;padding:8px 10px;text-decoration:none}
+#chomu-palace-compact .cc-scroll svg{width:14px;height:14px}
+#chomu-palace-compact .cc-section{scroll-margin-top:22px}
+#chomu-palace-compact .cc-section+.cc-section{border-top:1px solid var(--cc-line)}
+#chomu-palace-compact .cc-inner{max-width:900px;margin:auto;padding:38px 7%}
+#chomu-palace-compact .cc-kicker{font:11px/1.7 'DM Sans',Arial,sans-serif;letter-spacing:1.7px;text-transform:uppercase;color:var(--cc-gold)}
+#chomu-palace-compact .cc-heading{font:400 39px/1.08 'Cormorant Garamond',Georgia,serif;letter-spacing:-.4px;margin:8px 0 13px!important}
+#chomu-palace-compact .cc-heading em{font-weight:400;color:var(--cc-gold)}
+#chomu-palace-compact .cc-copy{font-size:13px;line-height:1.85;color:var(--cc-muted)}
+#chomu-palace-compact .cc-story{display:grid;grid-template-columns:1fr 1.1fr;gap:28px;align-items:center}
+#chomu-palace-compact .cc-photo-placeholder{min-height:190px;background:#e5e7db;border:1px solid var(--cc-line);display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;padding:22px}
+#chomu-palace-compact .cc-photo-placeholder span{font:400 24px/1.15 'Cormorant Garamond',Georgia,serif}
+#chomu-palace-compact .cc-photo-placeholder small{font-size:11px;color:var(--cc-muted);margin-top:11px}
+#chomu-palace-compact .cc-story .cc-heading{font-size:35px}
+#chomu-palace-compact .cc-timeline{background:transparent}
+#chomu-palace-compact .cc-days{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:25px}
+#chomu-palace-compact .cc-day-heading{font:400 27px/1.2 'Cormorant Garamond',Georgia,serif;padding-bottom:13px;border-bottom:1px solid var(--cc-line)}
+#chomu-palace-compact .cc-event{display:grid;grid-template-columns:80px 1fr;gap:13px;padding:14px 0;border-bottom:1px solid var(--cc-line);align-items:start}
+#chomu-palace-compact .cc-event time{font:400 23px/1.25 'Cormorant Garamond',Georgia,serif;white-space:nowrap}
+#chomu-palace-compact .cc-event h4{font:400 24px/1.12 'Cormorant Garamond',Georgia,serif;margin:0 0 6px}
+#chomu-palace-compact .cc-event p{font-size:12px;line-height:1.75;color:var(--cc-muted)}
+#chomu-palace-compact .cc-visit{margin-top:23px;padding-bottom:22px;border-bottom:1px solid var(--cc-line)}
+#chomu-palace-compact .cc-visit-heading{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-bottom:5px}
+#chomu-palace-compact .cc-subheading{font:400 27px/1.15 'Cormorant Garamond',Georgia,serif}
+#chomu-palace-compact .cc-map{display:inline-flex;align-items:center;gap:9px;min-height:44px;color:var(--cc-ink);font-size:12px;text-decoration:underline;text-underline-offset:4px;white-space:nowrap}
+#chomu-palace-compact .cc-service{display:grid;grid-template-columns:.8fr 1.2fr;gap:25px;align-items:start;padding:20px 0;border-bottom:1px solid var(--cc-line)}
+#chomu-palace-compact .cc-service h3{font:400 27px/1.15 'Cormorant Garamond',Georgia,serif}
+#chomu-palace-compact .cc-status{font-size:11px;letter-spacing:.5px;color:var(--cc-gold);margin-top:15px!important}
+#chomu-palace-compact .cc-city-list{display:grid;grid-template-columns:1fr 1fr;gap:0 25px;margin-top:16px}
+#chomu-palace-compact .cc-city-link{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:61px;padding:11px 0;border-bottom:1px solid var(--cc-line);text-decoration:none;color:var(--cc-ink)}
+#chomu-palace-compact .cc-city-link strong{font:400 25px/1.15 'Cormorant Garamond',Georgia,serif;display:block}
+#chomu-palace-compact .cc-city-link small{display:block;font:12px/1.8 'DM Sans',Arial,sans-serif;color:var(--cc-muted);margin-top:3px}
+#chomu-palace-compact .cc-city-link .cc-arrow{font-size:17px;color:var(--cc-gold)}
+#chomu-palace-compact .cc-more{margin-top:12px}
+#chomu-palace-compact .cc-more summary{min-height:48px;padding:13px 0;font:12px/1.8 'DM Sans',Arial,sans-serif;color:var(--cc-ink);text-decoration:underline;text-underline-offset:4px}
+#chomu-palace-compact .cc-more .cc-city-list{margin-top:0}
+#chomu-palace-compact .cc-city-note{font-size:11px;line-height:1.85;color:var(--cc-muted);margin-top:12px!important}
+#chomu-palace-compact .cc-contact{background:#2c493c;color:var(--cc-ivory);text-align:center}
+#chomu-palace-compact .cc-contact .cc-inner{padding-block:30px}
+#chomu-palace-compact .cc-contact h2{font:400 32px/1.15 'Pinyon Script','Cormorant Garamond',Georgia,serif}
+#chomu-palace-compact .cc-phone{display:inline-flex;align-items:center;min-height:48px;font:400 31px/1.3 'Cormorant Garamond',Georgia,serif;color:var(--cc-ivory);text-decoration:none;margin-top:11px}
+#chomu-palace-compact .cc-contact p{font-size:11px;line-height:1.8;color:#dce0ce;margin-top:12px!important}
+@container (max-width:650px){#chomu-palace-compact .cc-days{grid-template-columns:1fr;gap:27px}}
+@container (max-width:540px){
+ #chomu-palace-compact .cc-hero{min-height:760px}
+ #chomu-palace-compact .cc-photo{object-position:var(--cc-photo-position,28%) center}
+ #chomu-palace-compact .cc-monogram{top:30px}
+ #chomu-palace-compact .cc-cover{padding:125px 22px 55px;justify-content:center}
+ #chomu-palace-compact .cc-names{flex-direction:column;align-items:center;gap:2px;font-size:calc(clamp(56px,17.8cqw,82px) * var(--cc-names-scale));line-height:.96;letter-spacing:-.8px}
+ #chomu-palace-compact .cc-names .cc-and{font-size:.72em;margin:6px 0 3px;line-height:1.12}
+ #chomu-palace-compact .cc-announcement{font-size:14px;letter-spacing:3px;line-height:1.8;margin-top:50px!important}
+ #chomu-palace-compact .cc-location{font-size:39px;line-height:1.3;margin-top:28px!important}
+ #chomu-palace-compact .cc-date{font-size:15px;letter-spacing:3px;line-height:1.8;margin-top:21px!important}
+ #chomu-palace-compact .cc-place{font-size:11px;letter-spacing:1.8px;margin-top:9px!important}
+ #chomu-palace-compact .cc-scroll{font-size:11px;letter-spacing:1px;margin-top:35px}
+ #chomu-palace-compact .cc-inner{padding:31px 24px}
+ #chomu-palace-compact .cc-heading{font-size:37px}
+ #chomu-palace-compact .cc-story{grid-template-columns:1fr;gap:19px}
+ #chomu-palace-compact .cc-photo-placeholder{min-height:175px}
+ #chomu-palace-compact .cc-story .cc-heading{font-size:34px}
+ #chomu-palace-compact .cc-service{grid-template-columns:1fr;gap:7px;padding:18px 0}
+ #chomu-palace-compact .cc-city-list{grid-template-columns:1fr}
+ #chomu-palace-compact .cc-event{grid-template-columns:82px 1fr;gap:13px}
+ #chomu-palace-compact .cc-city-link{min-height:65px}
+}
+@container (max-width:350px){#chomu-palace-compact .cc-date{font-size:14px;letter-spacing:2.4px}#chomu-palace-compact .cc-location{font-size:35px}#chomu-palace-compact .cc-announcement{font-size:13px;letter-spacing:2.6px}#chomu-palace-compact .cc-cover{padding-inline:18px}#chomu-palace-compact .cc-inner{padding-inline:21px}#chomu-palace-compact .cc-visit-heading{gap:10px}}
+@media(prefers-reduced-motion:reduce){#chomu-palace-compact *{scroll-behavior:auto!important}}
+
+#peacock-timeline{container-type:inline-size;width:100%}
+#peacock-timeline .ps-stage{--ps-paper:#fffcf6;--ps-ink:#304638;--ps-muted:#596454;--ps-line:#c9c1ac;--ps-space:5px;--ps-bird-size:136px;--ps-motifs:1;--ps-art:url('assets/peacock-motif.webp');padding:36px 42px;background:transparent;overflow:hidden;display:flex;justify-content:center;box-sizing:border-box}
+#peacock-timeline .ps-stage *{box-sizing:border-box}
+#peacock-timeline .ps-sheet{position:relative;width:100%;max-width:420px;margin:0;padding:0 28px;background:transparent;color:var(--ps-ink);border:0;box-shadow:none;font-family:'Cormorant Garamond',Georgia,serif}
+#peacock-timeline .ps-header{text-align:center;margin-bottom:18px}
+#peacock-timeline .ps-title{display:flex;justify-content:center;align-items:baseline;gap:9px;font:400 39px/1.08 'Cormorant Garamond',Georgia,serif;letter-spacing:-.4px;margin:0}
+#peacock-timeline .ps-title em{font:400 42px/1 'Pinyon Script','Cormorant Garamond',Georgia,serif;letter-spacing:0}
+#peacock-timeline p.ps-details{font:400 11px/1.4 'Cormorant Garamond',Georgia,serif;letter-spacing:4.5px;text-transform:uppercase;margin:3px 0 0;padding-left:4.5px}
+#peacock-timeline .ps-day{position:relative;z-index:1}
+#peacock-timeline .ps-day+.ps-day{margin-top:18px}
+#peacock-timeline h3.ps-date{font:400 italic 13px/1.3 'Cormorant Garamond',Georgia,serif;letter-spacing:.8px;text-transform:uppercase;text-align:center;margin:0 0 8px}
+#peacock-timeline .ps-events{position:relative}
+#peacock-timeline .ps-events:before{content:'';position:absolute;left:64px;top:3px;bottom:3px;width:1px;background:var(--ps-line)}
+#peacock-timeline .ps-event{display:grid;grid-template-columns:64px minmax(0,1fr);gap:0;align-items:start;padding:var(--ps-space) 0}
+#peacock-timeline .ps-event time{font:400 15px/1.4 'Cormorant Garamond',Georgia,serif;text-align:right;padding-right:12px;white-space:nowrap}
+#peacock-timeline .ps-event-body{padding-left:14px;min-width:0}
+#peacock-timeline .ps-event h4{font:400 17px/1.22 'Cormorant Garamond',Georgia,serif;letter-spacing:.1px;margin:0 0 2px}
+#peacock-timeline .ps-event p{font:400 italic 13.5px/1.3 'Cormorant Garamond',Georgia,serif;color:var(--ps-muted);margin:0}
+#peacock-timeline .ps-bird{position:absolute;width:var(--ps-bird-size);height:calc(var(--ps-bird-size) * .5);background-image:var(--ps-art);background-size:contain;background-repeat:no-repeat;pointer-events:none;z-index:2;opacity:var(--ps-motifs)}
+#peacock-timeline .ps-bird-left{left:calc(20px - var(--ps-bird-size));top:102px;transform:rotate(-8deg)}
+#peacock-timeline .ps-bird-right{right:calc(20px - var(--ps-bird-size));top:269px;transform:scaleX(-1) rotate(-7deg)}
+#peacock-timeline .ps-footer{text-align:center;margin-top:18px;position:relative;z-index:1}
+#peacock-timeline .ps-signature{font:400 24px/1.1 'Pinyon Script','Cormorant Garamond',Georgia,serif;color:var(--ps-ink);margin:0}
+#peacock-timeline .ps-footer small{display:block;font:400 11px/1.7 'Cormorant Garamond',Georgia,serif;letter-spacing:.35px;color:var(--ps-muted);margin-top:9px}
+@container (max-width:440px){#peacock-timeline .ps-stage{padding:24px 24px}#peacock-timeline .ps-sheet{padding:0 22px}#peacock-timeline .ps-title{font-size:37px;gap:8px}#peacock-timeline .ps-title em{font-size:40px}#peacock-timeline .ps-stage{--ps-bird-size:124px}}
+@container (max-width:350px){#peacock-timeline .ps-stage{padding:22px 18px}#peacock-timeline .ps-sheet{padding:0 18px}#peacock-timeline .ps-event-body{padding-left:12px}#peacock-timeline .ps-event h4{font-size:16.5px}#peacock-timeline .ps-event p{font-size:13px}#peacock-timeline .ps-bird-left{left:calc(16px - var(--ps-bird-size));top:97px}#peacock-timeline .ps-bird-right{right:calc(16px - var(--ps-bird-size));top:261px}}
+#peacock-timeline .ps-header{display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:24px}
+#peacock-timeline h2.ps-title{font:400 46px/1.2 'Pinyon Script','Cormorant Garamond',Georgia,serif;letter-spacing:0;display:block;white-space:nowrap}
+#peacock-timeline .ps-title-peacock{width:76px;height:38px;flex:0 0 76px;background-image:var(--ps-art);background-size:contain;background-repeat:no-repeat;opacity:var(--ps-motifs)}
+#peacock-timeline .ps-event{position:relative;min-height:54px}
+#peacock-timeline .ps-event-body{padding-right:13px}
+#peacock-timeline .ps-event-motif{position:absolute;right:-32px;top:1px;width:36px;height:60px;background-image:var(--ps-event-art);background-repeat:no-repeat;background-size:500% 100%;pointer-events:none}
+#peacock-timeline .ps-motif-henna{background-position:0% center}
+#peacock-timeline .ps-motif-music{background-position:25% center}
+#peacock-timeline .ps-motif-baraat{background-position:50% center}
+#peacock-timeline .ps-motif-garland{background-position:75% center}
+#peacock-timeline .ps-motif-reception{background-position:100% center}
+@container (max-width:440px){#peacock-timeline h2.ps-title{font-size:41px}#peacock-timeline .ps-title-peacock{width:64px;height:32px;flex-basis:64px}}
+@container (max-width:350px){#peacock-timeline h2.ps-title{font-size:38px}#peacock-timeline .ps-header{gap:7px}#peacock-timeline .ps-title-peacock{width:58px;height:29px;flex-basis:58px}#peacock-timeline .ps-event-motif{right:-31px;width:34px;height:57px}}
+
+#peacock-timeline .ps-stage{--ps-event-art:none}
+
+#peacock-timeline .ps-event{grid-template-columns:56px 40px minmax(0,1fr);column-gap:8px;align-items:center;min-height:58px}
+#peacock-timeline .ps-events:before{left:56px}
+#peacock-timeline .ps-event time{padding-right:8px}
+#peacock-timeline .ps-event-body{padding-left:0;padding-right:0}
+#peacock-timeline .ps-event-motif{position:static;right:auto;top:auto;width:40px;height:52px;align-self:center;justify-self:center}
+#peacock-timeline .ps-motif-baraat{background-size:400% 100%;background-position:50% center}
+
+#peacock-timeline .ps-event{grid-template-columns:54px 44px minmax(0,1fr);column-gap:12px;align-items:center;min-height:70px;padding:calc(var(--ps-space) + 4px) 0}
+#peacock-timeline .ps-events:before{left:54px}
+#peacock-timeline .ps-event time{padding-right:8px}
+#peacock-timeline .ps-event-body{padding-left:2px;padding-right:0}
+#peacock-timeline img.ps-event-motif{display:block;position:static;width:44px;height:52px;max-width:none;object-fit:contain;object-position:center;background:none;align-self:center;justify-self:center}
+#peacock-timeline .ps-day+.ps-day{margin-top:26px}
+#peacock-timeline .ps-header{margin-bottom:28px}
+
+
+
+
+#pink-city-guide {
+  container-type: inline-size;
+  width: 100%;
+  color: #2c493c;
+  font: 13px/1.55 'DM Sans', Arial, sans-serif;
+}
+#pink-city-guide *, #pink-city-guide *::before { box-sizing: border-box; }
+#pink-city-guide .jp-guide { padding: 10px 0; background: #f6f2e8; }
+#pink-city-guide h2#jp-heading {
+  margin: 0 0 18px;
+  font: 400 clamp(38px, 8cqw, 58px)/1 'Cormorant Garamond', Georgia, serif;
+  letter-spacing: -.035em;
+}
+#pink-city-guide h2 em { color: #9b5d4e; font-weight: 400; }
+#pink-city-guide .jp-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.95fr) minmax(168px, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+#pink-city-guide figure { min-width: 0; margin: 0; }
+#pink-city-guide .jp-map { position: relative; }
+#pink-city-guide .jp-map > img { display: block; width: 100%; height: auto; }
+#pink-city-guide .jp-main .jp-map > img { aspect-ratio: 520 / 685; }
+#pink-city-guide .jp-detail .jp-map > img { aspect-ratio: 107 / 80; }
+#pink-city-guide .jp-leaders { position: absolute; inset: 0; width: 100%; height: 100%; }
+#pink-city-guide .jp-leaders line { stroke: #a87865; stroke-width: 1; vector-effect: non-scaling-stroke; }
+#pink-city-guide .jp-leaders circle { fill: #925748; }
+#pink-city-guide .jp-context, #pink-city-guide .jp-north {
+  position: absolute;
+  white-space: nowrap;
+  color: #53684f;
+  font: 400 clamp(12px, 2.6cqw, 16px)/1 'Cormorant Garamond', Georgia, serif;
+  transform: translate(-50%, -50%);
+}
+#pink-city-guide .jp-north { right: 1%; top: 2%; transform: none; font-size: 12px; }
+#pink-city-guide .jp-detail-locator {
+  position: absolute;
+  border: 1px dashed #ac7868;
+}
+#pink-city-guide .jp-scale {
+  position: absolute; bottom: 2%; left: 2%;
+  border-top: 1px solid #7b725e;
+  padding-top: 2px; white-space: nowrap;
+  color: #675f4e; font-size: 11px; text-align: center;
+}
+#pink-city-guide .hill-label, #pink-city-guide .lake-label { font-style: italic; }
+#pink-city-guide .lake-label { color: #496c71; }
+#pink-city-guide .pink-label { color: #925748; }
+#pink-city-guide .jp-mark {
+  position: absolute; display: block;
+  width: clamp(41px, 10cqw, 65px); aspect-ratio: 1;
+  transform: translate(-50%, -50%);
+  isolation: isolate;
+}
+#pink-city-guide .jp-mark.is-selected::before {
+  content: ''; position: absolute; inset: 5%; z-index: -1;
+  border: 1px solid #8c7650; border-radius: 50%; background: #fffaf0c7;
+}
+#pink-city-guide .jp-art {
+  display: block; width: 100%; height: 100%;
+  background-repeat: no-repeat; background-position: center; background-size: contain;
+}
+#pink-city-guide .jp-mark b, #pink-city-guide .jp-key {
+  background: #fdf7ed; color: #675332; border: 1px solid #ae9a75;
+  border-radius: 50%; display: grid; place-items: center;
+  font: 400 11px/1 'DM Sans', Arial, sans-serif;
+}
+#pink-city-guide .jp-mark b { width: 17px; height: 17px; position: absolute; bottom: 0; right: 0; }
+#pink-city-guide .jp-mark.is-selected b,
+#pink-city-guide .jp-key[aria-pressed="true"] { color: #fffaf0; background: #2c493c; border-color: #2c493c; }
+#pink-city-guide .jp-detail figcaption {
+  color: #925748; font: italic 400 19px/1.2 'Cormorant Garamond', Georgia, serif;
+  margin: 0 0 6px;
+}
+#pink-city-guide .jp-detail .jp-mark { width: clamp(31px, 8cqw, 53px); }
+#pink-city-guide .jp-detail .jp-mark b { bottom: -1px; right: -5px; }
+#pink-city-guide .jp-detail .jp-mark[data-place="city"] b { inset: auto auto 0 -4px; }
+#pink-city-guide .jp-detail .jp-mark[data-place="jantar"] b { inset: auto auto -3px -4px; }
+#pink-city-guide .jp-legend { margin-top: 13px; }
+#pink-city-guide .jp-legend h3 {
+  margin: 9px 0 0;
+  font: 500 11px/1.5 'DM Sans', Arial, sans-serif;
+  letter-spacing: .13em; text-transform: uppercase; color: #7b602e;
+}
+#pink-city-guide .jp-legend ul { list-style: none; padding: 0; margin: 0; }
+#pink-city-guide .jp-legend li { display: flex; align-items: center; border-bottom: 1px solid #d6cfbc; }
+#pink-city-guide .jp-key {
+  width: 44px; height: 44px; flex: 0 0 44px;
+  border: 0; background: transparent;
+}
+#pink-city-guide .jp-key[aria-pressed="true"] { background: #2c493c; }
+#pink-city-guide .jp-legend a {
+  flex: 1; min-height: 44px; display: flex; align-items: center; justify-content: space-between;
+  gap: 4px; text-decoration: none; color: inherit;
+  font: 400 clamp(17px, 3.4cqw, 22px)/1.1 'Cormorant Garamond', Georgia, serif;
+}
+#pink-city-guide .jp-legend a span { margin-inline-end: 3px; color: #7b602e; font: 12px 'DM Sans', Arial, sans-serif; }
+#pink-city-guide .jp-legend a:hover { text-decoration: underline; text-underline-offset: 3px; }
+#pink-city-guide .jp-detail-line { margin-top: 9px; font-size: 12px; color: #586453; }
+#pink-city-guide .jp-detail-line[hidden] { display: none; }
+#pink-city-guide .jp-detail-line a { margin-left: 8px; color: #2c493c; }
+#pink-city-guide p.jp-credit { margin-top: 8px; font-size: 11px; color: #586453; }
+#pink-city-guide .jp-credit a { color: inherit; text-underline-offset: 2px; }
+
+@container (max-width: 560px) {
+  #pink-city-guide .jp-layout { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+  #pink-city-guide .jp-detail { max-width: 335px; margin-inline: auto; }
+  #pink-city-guide .jp-detail .jp-mark { width: clamp(42px, 14cqw, 62px); }
+  #pink-city-guide .jp-legend { margin-top: 17px; }
+}
+
+#pink-city-guide .jp-art.amber { background-image:url(assets/map-icon-amber.webp); }
+#pink-city-guide .jp-art.hawa { background-image:url(assets/map-icon-hawa.webp); }
+#pink-city-guide .jp-art.city { background-image:url(assets/map-icon-city.webp); }
+#pink-city-guide .jp-art.jantar { background-image:url(assets/map-icon-jantar.webp); }
+#pink-city-guide .jp-art.nahargarh { background-image:url(assets/map-icon-nahargarh.webp); }
+#pink-city-guide .jp-art.rawat { background-image:url(assets/map-icon-rawat.webp); }
+#pink-city-guide .jp-art.lmb { background-image:url(assets/map-icon-lmb.webp); }
+#pink-city-guide .jp-art.palladio { background-image:url(assets/map-icon-palladio.webp); }

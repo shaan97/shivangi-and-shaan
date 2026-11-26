@@ -11,8 +11,16 @@ body{margin:0;background:#f6f2e8}
 #chomu-palace-compact .cc-photo{position:absolute;inset:0;z-index:-3;display:block;width:100%;height:100%;object-fit:cover;object-position:var(--cc-photo-position,40%) center}
 #chomu-palace-compact .cc-wash{position:absolute;inset:0;z-index:-2;background:#173d29;opacity:var(--cc-darkness);pointer-events:none}
 #chomu-palace-compact .cc-hero:after{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(8,28,19,.25),rgba(19,35,22,.04) 40%,rgba(12,31,18,.28));pointer-events:none}
-#chomu-palace-compact .cc-monogram{position:absolute;top:28px;left:0;right:0;text-align:center;color:var(--cc-ivory);font:29px/1 'Cormorant Garamond',Georgia,serif;letter-spacing:-1px}
-#chomu-palace-compact .cc-monogram em{font-size:24px;margin:0 4px}
+#chomu-palace-compact .cc-monogram {
+  position: absolute;
+  z-index: 1;
+  top: 28px;
+  left: 50%;
+  width: clamp(54px, 6.7cqw, 74px);
+  height: auto;
+  transform: translateX(-50%);
+  filter: drop-shadow(0 1px 3px #14271b88);
+}
 #chomu-palace-compact .cc-cover{position:relative;flex:1;text-align:center;padding:164px 28px 50px;display:flex;flex-direction:column;align-items:center}
 #chomu-palace-compact .cc-names{display:flex;justify-content:center;align-items:baseline;gap:25px;width:100%;font:400 calc(clamp(48px,9cqw,94px) * var(--cc-names-scale))/1.04 'Cormorant Garamond',Georgia,serif;letter-spacing:-1.7px;white-space:nowrap;text-shadow:0 1px 18px #0f281a22}
 #chomu-palace-compact .cc-names .cc-and{font:400 .78em/1 'Pinyon Script','Cormorant Garamond',Georgia,serif;letter-spacing:-.7px;margin:0 1px}

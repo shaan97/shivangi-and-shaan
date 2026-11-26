@@ -49,3 +49,47 @@
     select(event.detail?.globals?.widgetState?.modelContent?.jaipurPlace);
   });
 })();
+
+(() => {
+  const section = document.getElementById('cc-engagement');
+  const viewer = section.querySelector('.cc-photo-viewer');
+  if (typeof viewer.showModal !== 'function') return;
+
+  const fullPhoto = viewer.querySelector('.cc-photo-viewer-image');
+  section.querySelectorAll('[data-engagement-photo]').forEach(link => {
+    link.setAttribute('aria-haspopup', 'dialog');
+    link.addEventListener('click', event => {
+      if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      fullPhoto.alt = link.querySelector('img').alt;
+      fullPhoto.src = link.href;
+      viewer.showModal();
+    });
+  });
+})();
+
+(() => {
+  const links = JSON.parse(document.getElementById('cc-guest-form-links').textContent);
+
+  function responderUrl(link) {
+    if (!link) return null;
+    try {
+      const url = new URL(link);
+      if (url.protocol !== 'https:' || url.username || url.password || url.port) return null;
+      const shortLink = url.hostname === 'forms.gle' && /^\/[\w-]+\/?$/.test(url.pathname);
+      const fullLink = url.hostname === 'docs.google.com' && /^\/forms\/d\/(?:e\/)?[\w-]+\/viewform\/?$/.test(url.pathname);
+      return shortLink || fullLink ? url.href : null;
+    } catch {
+      return null;
+    }
+  }
+
+  document.querySelectorAll('[data-guest-form]').forEach(service => {
+    const url = responderUrl(links[service.dataset.guestForm]);
+    if (!url) return;
+    const link = service.querySelector('.cc-form-link');
+    link.href = url;
+    link.hidden = false;
+    service.querySelector('.cc-form-status').hidden = true;
+  });
+})();

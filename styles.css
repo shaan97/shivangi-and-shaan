@@ -29,11 +29,48 @@ body{margin:0;background:#f6f2e8}
 #chomu-palace-compact .cc-heading{font:400 39px/1.08 'Cormorant Garamond',Georgia,serif;letter-spacing:-.4px;margin:8px 0 13px!important}
 #chomu-palace-compact .cc-heading em{font-weight:400;color:var(--cc-gold)}
 #chomu-palace-compact .cc-copy{font-size:13px;line-height:1.85;color:var(--cc-muted)}
-#chomu-palace-compact .cc-story{display:grid;grid-template-columns:1fr 1.1fr;gap:28px;align-items:center}
-#chomu-palace-compact .cc-photo-placeholder{min-height:190px;background:#e5e7db;border:1px solid var(--cc-line);display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;padding:22px}
-#chomu-palace-compact .cc-photo-placeholder span{font:400 24px/1.15 'Cormorant Garamond',Georgia,serif}
-#chomu-palace-compact .cc-photo-placeholder small{font-size:11px;color:var(--cc-muted);margin-top:11px}
-#chomu-palace-compact .cc-story .cc-heading{font-size:35px}
+#chomu-palace-compact #cc-engagement .cc-inner { padding-block: 24px; }
+#cc-engagement .cc-story { margin-bottom: 12px; }
+#cc-engagement .cc-story .cc-heading {
+  margin: 4px 0 3px !important;
+  font-size: clamp(29px, 7.6cqw, 43px);
+}
+#cc-engagement .cc-story .cc-heading em { white-space: nowrap; }
+#cc-engagement .cc-copy { font-size: 14px; line-height: 1.5; }
+#cc-engagement .cc-engagement-strip {
+  display: flex;
+  gap: 9px;
+  margin: 0 -3px;
+  padding: 3px 3px 7px;
+  list-style: none;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: 3px;
+  overscroll-behavior-x: contain;
+  scrollbar-width: thin;
+  scrollbar-color: #7f8e75 #e8e4d9;
+}
+#cc-engagement .cc-engagement-strip li {
+  flex: 0 0 30%;
+  min-width: 0;
+  scroll-snap-align: start;
+  background: var(--cc-soft);
+}
+#cc-engagement .cc-engagement-strip img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  object-position: center 44%;
+}
+#cc-engagement .cc-engagement-strip:focus-visible {
+  outline: 2px solid var(--cc-ink);
+  outline-offset: 2px;
+}
+@container (max-width: 650px) {
+  #cc-engagement .cc-engagement-strip li { flex-basis: min(59%, 225px); }
+}
 #chomu-palace-compact .cc-timeline{background:transparent}
 #chomu-palace-compact .cc-days{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:25px}
 #chomu-palace-compact .cc-day-heading{font:400 27px/1.2 'Cormorant Garamond',Georgia,serif;padding-bottom:13px;border-bottom:1px solid var(--cc-line)}
@@ -77,9 +114,6 @@ body{margin:0;background:#f6f2e8}
  #chomu-palace-compact .cc-scroll{font-size:11px;letter-spacing:1px;margin-top:35px}
  #chomu-palace-compact .cc-inner{padding:31px 24px}
  #chomu-palace-compact .cc-heading{font-size:37px}
- #chomu-palace-compact .cc-story{grid-template-columns:1fr;gap:19px}
- #chomu-palace-compact .cc-photo-placeholder{min-height:175px}
- #chomu-palace-compact .cc-story .cc-heading{font-size:34px}
  #chomu-palace-compact .cc-service{grid-template-columns:1fr;gap:7px;padding:18px 0}
  #chomu-palace-compact .cc-city-list{grid-template-columns:1fr}
  #chomu-palace-compact .cc-event{grid-template-columns:82px 1fr;gap:13px}

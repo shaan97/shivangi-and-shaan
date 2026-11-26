@@ -51,24 +51,6 @@
 })();
 
 (() => {
-  const section = document.getElementById('cc-engagement');
-  const viewer = section.querySelector('.cc-photo-viewer');
-  if (typeof viewer.showModal !== 'function') return;
-
-  const fullPhoto = viewer.querySelector('.cc-photo-viewer-image');
-  section.querySelectorAll('[data-engagement-photo]').forEach(link => {
-    link.setAttribute('aria-haspopup', 'dialog');
-    link.addEventListener('click', event => {
-      if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
-      event.preventDefault();
-      fullPhoto.alt = link.querySelector('img').alt;
-      fullPhoto.src = link.href;
-      viewer.showModal();
-    });
-  });
-})();
-
-(() => {
   const links = JSON.parse(document.getElementById('cc-guest-form-links').textContent);
 
   function responderUrl(link) {

@@ -198,7 +198,8 @@ body:has(.pswp--open) { overflow: hidden; }
 #peacock-timeline .ps-footer small{display:block;font:400 11px/1.7 'Cormorant Garamond',Georgia,serif;letter-spacing:.35px;color:var(--ps-muted);margin-top:9px}
 @container (max-width:440px){#peacock-timeline .ps-stage{padding:24px 24px}#peacock-timeline .ps-sheet{padding:0 22px}#peacock-timeline .ps-title{font-size:37px;gap:8px}#peacock-timeline .ps-title em{font-size:40px}#peacock-timeline .ps-stage{--ps-bird-size:124px}}
 @container (max-width:350px){#peacock-timeline .ps-stage{padding:22px 18px}#peacock-timeline .ps-sheet{padding:0 18px}#peacock-timeline .ps-event-body{padding-left:12px}#peacock-timeline .ps-event h4{font-size:16.5px}#peacock-timeline .ps-event p{font-size:13px}#peacock-timeline .ps-bird-left{left:calc(16px - var(--ps-bird-size));top:97px}#peacock-timeline .ps-bird-right{right:calc(16px - var(--ps-bird-size));top:261px}}
-#peacock-timeline .ps-header{display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:24px}
+#peacock-timeline .ps-title-row{display:flex;align-items:center;justify-content:center;gap:10px}
+#peacock-timeline p.ps-venue{margin:4px 0 0;color:var(--ps-muted);font:400 18px/1.25 'Cormorant Garamond',Georgia,serif;letter-spacing:.035em}
 #peacock-timeline h2.ps-title{font:400 46px/1.2 'Pinyon Script','Cormorant Garamond',Georgia,serif;letter-spacing:0;display:block;white-space:nowrap}
 #peacock-timeline .ps-title-peacock{width:76px;height:38px;flex:0 0 76px;background-image:var(--ps-art);background-size:contain;background-repeat:no-repeat;opacity:var(--ps-motifs)}
 #peacock-timeline .ps-event{position:relative;min-height:54px}
@@ -210,7 +211,7 @@ body:has(.pswp--open) { overflow: hidden; }
 #peacock-timeline .ps-motif-garland{background-position:75% center}
 #peacock-timeline .ps-motif-reception{background-position:100% center}
 @container (max-width:440px){#peacock-timeline h2.ps-title{font-size:41px}#peacock-timeline .ps-title-peacock{width:64px;height:32px;flex-basis:64px}}
-@container (max-width:350px){#peacock-timeline h2.ps-title{font-size:38px}#peacock-timeline .ps-header{gap:7px}#peacock-timeline .ps-title-peacock{width:58px;height:29px;flex-basis:58px}#peacock-timeline .ps-event-motif{right:-31px;width:34px;height:57px}}
+@container (max-width:350px){#peacock-timeline h2.ps-title{font-size:38px}#peacock-timeline .ps-title-row{gap:7px}#peacock-timeline .ps-title-peacock{width:58px;height:29px;flex-basis:58px}#peacock-timeline .ps-event-motif{right:-31px;width:34px;height:57px}}
 
 #peacock-timeline .ps-stage{--ps-event-art:none}
 
@@ -253,12 +254,10 @@ body:has(.pswp--open) { overflow: hidden; }
   align-items: start;
 }
 #pink-city-guide figure { min-width: 0; margin: 0; }
-#pink-city-guide .jp-main { position: relative; }
 #pink-city-guide .jp-map { position: relative; }
 #pink-city-guide .jp-map > img { display: block; width: 100%; height: auto; }
-#pink-city-guide .jp-main .jp-map > img { aspect-ratio: 520 / 685; }
 #pink-city-guide .jp-detail .jp-map > img { aspect-ratio: 107 / 80; }
-#pink-city-guide .jp-leaders { position: absolute; inset: 0; width: 100%; height: 100%; }
+#pink-city-guide .jp-leaders { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
 #pink-city-guide .jp-leaders line { stroke: #a87865; stroke-width: 1; vector-effect: non-scaling-stroke; }
 #pink-city-guide .jp-leaders circle { fill: #925748; stroke: #fff8ed; stroke-width: 1; vector-effect: non-scaling-stroke; }
 #pink-city-guide .jp-anchor.is-selected line { stroke: #2c493c; }
@@ -271,44 +270,32 @@ body:has(.pswp--open) { overflow: hidden; }
   transform: translate(-50%, -50%);
 }
 #pink-city-guide .jp-north { right: 1%; top: 2%; transform: none; font-size: 12px; }
-#pink-city-guide .jp-region {
+#pink-city-guide .jp-venue {
   position: absolute;
-  top: 1%;
-  left: 1%;
-  width: min(46%, 205px);
-  aspect-ratio: 184 / 114;
-  border: 1px solid #d4cdb9;
-  background: #f7f3e9;
-}
-#pink-city-guide .jp-region-map { display: block; width: 100%; height: 100%; }
-#pink-city-guide .jp-region-extent { fill: #e6eadc; stroke: #98a286; stroke-width: 1; stroke-dasharray: 2 1.6; }
-#pink-city-guide .jp-region-venue { fill: #925748; }
-#pink-city-guide .jp-region-centre { fill: #607557; }
-#pink-city-guide :is(.jp-region-caption, .jp-region-north) {
-  position: absolute;
-  top: 4px;
-  font: 11px/1.2 'DM Sans', Arial, sans-serif;
-  color: #586453;
-}
-#pink-city-guide .jp-region-caption { left: 7px; }
-#pink-city-guide .jp-region-north { right: 6px; }
-#pink-city-guide :is(.jp-region-chomu, .jp-region-city) {
-  position: absolute;
-  font: 12px/1.2 'DM Sans', Arial, sans-serif;
-  white-space: nowrap;
-  transform: translateY(-50%);
-}
-#pink-city-guide .jp-region-chomu {
-  left: 17.4%;
-  top: 29.82%;
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  gap: 7px;
   min-height: 44px;
+  padding-right: 4px;
+  transform: translate(-5px, -50%);
   color: #2c493c;
+  font: 500 clamp(17px, 3.5cqw, 22px)/1.1 'Cormorant Garamond', Georgia, serif;
+  white-space: nowrap;
   text-decoration: underline;
+  text-decoration-color: #a87865;
   text-underline-offset: 3px;
 }
-#pink-city-guide .jp-region-city { left: 31%; top: 71.05%; color: #586453; }
+#pink-city-guide .jp-venue::before {
+  content: '';
+  flex: 0 0 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #925748;
+  box-shadow: 0 0 0 2px #f6f2e8;
+}
+#pink-city-guide .jp-venue:hover { text-decoration-color: currentColor; }
+#pink-city-guide .jp-venue:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+#pink-city-guide .jp-city-label { font-size: clamp(17px, 4cqw, 22px); }
 #pink-city-guide .jp-detail-locator {
   position: absolute;
   border: 1px dashed #ac7868;
@@ -319,8 +306,7 @@ body:has(.pswp--open) { overflow: hidden; }
   padding-top: 2px; white-space: nowrap;
   color: #675f4e; font-size: 11px; text-align: center;
 }
-#pink-city-guide .hill-label, #pink-city-guide .lake-label { font-style: italic; }
-#pink-city-guide .lake-label { color: #496c71; }
+#pink-city-guide .hill-label { font-style: italic; }
 #pink-city-guide .pink-label { color: #925748; }
 #pink-city-guide .jp-mark {
   position: absolute; display: block;
@@ -328,6 +314,7 @@ body:has(.pswp--open) { overflow: hidden; }
   transform: translate(-50%, -50%);
   isolation: isolate;
 }
+#pink-city-guide .jp-main .jp-mark { width: clamp(35px, 8cqw, 65px); }
 #pink-city-guide .jp-mark.is-selected::before {
   content: ''; position: absolute; inset: 5%; z-index: -1;
   border: 1px solid #8c7650; border-radius: 50%; background: #fffaf0c7;
